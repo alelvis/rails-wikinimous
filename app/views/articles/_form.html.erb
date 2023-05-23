@@ -1,0 +1,12 @@
+<div class='container'>
+  <%= form_with model: @article do |form| %>
+  <div class='form-group'>
+    <%= form.label :title, class: 'form_label' %>
+    <%= form.text_field :title, class: 'form_control' %>
+    <%= form.label :content, class: 'form_label' %>
+    <%= form.text_area :content, class: 'form_control' %>
+    <%= form.submit class: 'btn btn-primary'%>
+  </div>
+  <% end %>
+  <%= link_to "Back", articles_path, class: 'btn btn-secondary' %>
+</div>
